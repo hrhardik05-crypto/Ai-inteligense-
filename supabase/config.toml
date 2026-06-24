@@ -1,0 +1,21 @@
+project_id = "tmeljbxlzxremkhmyeyj"
+
+[functions.candidate-scoring]
+verify_jwt = false
+
+[functions.generate-report]
+verify_jwt = false
+
+[functions.analyze-resume]
+verify_jwt = false
+
+[functions.recruitment-intelligence]
+verify_jwt = false
+
+[functions.redis-manage]
+verify_jwt = false
+
+[functions.generate-engagement]
+verify_jwt = false
+
+

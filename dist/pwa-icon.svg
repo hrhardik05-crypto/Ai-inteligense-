@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#0a0e1a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Brain Left Hemisphere Gradient -->
+    <linearGradient id="left-brain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Brain Right Hemisphere Gradient -->
+    <linearGradient id="right-brain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+
+    <!-- Outer Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Maskable / Regular Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+
+  <!-- Outer Neon Rings -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.25" />
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="10 5" />
+
+  <!-- Center Graphic Group with Glow -->
+  <g transform="translate(106, 106)" filter="url(#glow)">
+    
+    <!-- LEFT BRAIN PATHS -->
+    <path d="M150,70 C100,70 90,110 90,130 C90,150 110,160 110,170 C110,180 95,200 110,220 C125,240 145,230 150,230 L150,70 Z" 
+          fill="url(#left-brain)" opacity="0.9" />
+    
+    <!-- RIGHT BRAIN PATHS -->
+    <path d="M150,70 C200,70 210,110 210,130 C210,150 190,160 190,170 C190,180 205,200 190,220 C175,240 155,230 150,230 L150,70 Z" 
+          fill="url(#right-brain)" opacity="0.95" />
+
+    <!-- Stylized brain folds and node patterns (representing AI data connections) -->
+    <!-- Left lobe node circles -->
+    <circle cx="110" cy="115" r="7" fill="#ffffff" opacity="0.9" />
+    <circle cx="125" cy="150" r="5" fill="#ffffff" opacity="0.75" />
+    <circle cx="105" cy="185" r="6" fill="#e0f2fe" opacity="0.85" />
+    <circle cx="130" cy="210" r="5.5" fill="#e0f2fe" opacity="0.8" />
+
+    <!-- Right lobe node circles -->
+    <circle cx="190" cy="115" r="7" fill="#ffffff" opacity="0.9" />
+    <circle cx="175" cy="150" r="5" fill="#ffffff" opacity="0.75" />
+    <circle cx="195" cy="185" r="6" fill="#e0f2fe" opacity="0.85" />
+    <circle cx="170" cy="210" r="5.5" fill="#e0f2fe" opacity="0.8" />
+
+    <!-- Connecting fold lines -->
+    <!-- Left connection paths -->
+    <path d="M110,115 L125,150 M125,150 L105,185 M105,185 L130,210" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+    <path d="M150,100 C130,100 120,120 125,150 C130,180 140,190 150,200" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.3" />
+
+    <!-- Right connection paths -->
+    <path d="M190,115 L175,150 M175,150 L195,185 M195,185 L170,210" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+    <path d="M150,100 C170,100 180,120 175,150 C170,180 160,190 150,200" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.3" />
+
+    <!-- Stem & Core -->
+    <path d="M142,225 L158,225 L155,250 L145,250 Z" fill="#0ea5e9" opacity="0.8" />
+    <circle cx="150" cy="70" r="8" fill="#ffffff" />
+    <path d="M150,70 L150,225" stroke="#ffffff" stroke-width="3" opacity="0.4" />
+  </g>
+</svg>
