@@ -1,0 +1,19 @@
+John Doe
+Software Engineer
+Email: john.doe@example.com
+Phone: (555) 123-4567
+
+SUMMARY:
+Highly skilled Software Engineer with 5+ years of experience building scalable web applications. Strong background in React, Node.js, Python, and SQL database design.
+
+EXPERIENCE:
+Software Engineer | Acme Corp | 2023 - Present
+- Architected and built responsive React interfaces used by over 100k daily active users.
+- Optimized database queries in PostgreSQL, reducing average request latencies by 35%.
+
+Web Developer | TechSolutions | 2021 - 2023
+- Developed RESTful APIs using Node.js and Express.
+- Collaborated with design teams to translate Figma mockups into interactive UI.
+
+EDUCATION:
+Bachelor of Science in Computer Science | State University | 2017 - 2021
